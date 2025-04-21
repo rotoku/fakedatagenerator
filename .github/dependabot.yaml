@@ -1,0 +1,25 @@
+version: 2
+updates:
+  - package-ecosystem: "python"
+    directory: "src/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "fix"
+    versioning-strategy: "increase"
+  
+  - package-ecosystem: "terraform"
+    directory: "infra/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "fix"
+    versioning-strategy: "increase"
+
+  - package-ecosystem: "github-actions"
+    directory: ".github/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "fix"
+    versioning-strategy: "increase"
