@@ -125,3 +125,13 @@ Este projeto está licenciado sob a [Licença Apache 2.0](LICENSE).
 ## Contato
 
 Para dúvidas ou sugestões, entre em contato pelo e-mail: `seu-email@exemplo.com`.
+
+## Teste
+Adicionei um filtro no workflow para validar se eu alterar somente os arquivos *.md o workflow não vai iniciar
+
+```
+on:
+  push:
+    paths-ignore:
+      - '**/*.md'
+```
