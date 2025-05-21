@@ -1,8 +1,9 @@
 import requests
+import os
 
 class GitHubClient:
     """Classe para interagir com a API do GitHub."""
-    GITHUB_TOKEN = "ghp_11ABFO3NQ0fBMBqZZI8xeU_pa9uEcvrOFCQkFIqTzHxOc9D7MRKH5EMtPOQ8DAm5yD75QLM7KCuOSDmxbn"
+    GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
     BASE_URL = "https://api.github.com"
 
     def __init__(self):
